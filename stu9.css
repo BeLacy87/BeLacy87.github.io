@@ -1,16 +1,31 @@
+#bio-image {  
+  width: 25%;
+  height: 25%;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+#bio-name {
+  position: absolute;
+  top: 140px;
+  left: 3%;
+  color:#a8a3ff
+}
+
 body {
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     /* font-size: 18px; */
     line-height: 150%;
-    color: #333333;
-    
+    color: #333333;    
   }
+
+#contact-info {
+    width: 30%;
+    }
   
-header {
-    background: #333333;
-}
+
 
 h1 {
     position: relative;
@@ -23,38 +38,28 @@ h2 {
     font-size: 24px;
 }
 
+header {
+  background: #333333;
+}
+
+#logo{
+height:10%;
+width: 10%;
+}
 
 #main-bio,
 #contact-info,
 #bio-image {
 float: left;
-  }
-    
-#bio-image {
+  }  
   
-    width: 25%;
-    height: 25%;
-    margin-right: 20px;
-    border-radius: 10px;
-  }
-  
-
-
 #main-bio {
-  width: 70%;
-  
+  width: 70%;  
   }
   
-#contact-info {
-  width: 30%;
-  }
+
   
-  #bio-name {
-    position: absolute;
-    top: 140px;
-    left: 3%;
-    color:#a8a3ff
-  }
+
 
 #figure {
   position: relative;
@@ -82,6 +87,8 @@ float: left;
   height: 125px;
   margin-right: 10px;
   margin-top: 5px;
+  border-style: solid;
+  border-color: grey;
   border-radius: 5px;
 }
 
@@ -91,7 +98,7 @@ float: left;
 
  #projects{
   position: absolute;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
  }
 
  .image {
@@ -103,15 +110,15 @@ float: left;
   backface-visibility: hidden;
 }
 
-.middle {
+.middle, .middle4, .middle5, .middle6 {
   transition: .5s ease;
   opacity: 0;
+  
   position: absolute;
-  top: 50%;
-  left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
+  
 }
 
 .projectLink:hover .project-image {
@@ -121,10 +128,22 @@ float: left;
 .projectLink:hover .middle {
   opacity: 1;
 }
+.projectLink:hover .middle4 {
+  opacity: 1;
+}
+.projectLink:hover .middle5 {
+  opacity: 1;
+}
+
+.projectLink:hover .middle6 {
+  opacity: 1;
+}
+
 
 .text {
   background-color: rgb(167, 125, 196);
   color: white;
   font-size: 16px;
+  border-radius: 10px;
   padding: 16px 32px;
 }
