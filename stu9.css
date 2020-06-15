@@ -24,6 +24,16 @@ body {
 #contact-info {
     width: 30%;
     }
+
+.carousel-item {
+    height: 90vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
   
 
 
@@ -56,8 +66,6 @@ float: left;
 #main-bio {
   width: 70%;  
   }
-  
-
   
 
 
@@ -98,7 +106,7 @@ float: left;
 
  #projects{
   position: absolute;
-  /* overflow-y: scroll; */
+  overflow-y: scroll;
  }
 
  .image {
@@ -110,13 +118,12 @@ float: left;
   backface-visibility: hidden;
 }
 
-.middle, .middle4, .middle5, .middle6 {
+.middle{
   transition: .5s ease;
-  opacity: 0;
-  
+  opacity: 0;  
   position: absolute;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  transform: translate(5%, -50%);
+  -ms-transform: translate(5%, -50%);
   text-align: center;
   
 }
@@ -127,16 +134,7 @@ float: left;
 
 .projectLink:hover .middle {
   opacity: 1;
-}
-.projectLink:hover .middle4 {
-  opacity: 1;
-}
-.projectLink:hover .middle5 {
-  opacity: 1;
-}
-
-.projectLink:hover .middle6 {
-  opacity: 1;
+  
 }
 
 
